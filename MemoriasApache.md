@@ -5,36 +5,35 @@ Ofrece muchas características, como módulos que se cargan de forma dinámica, 
 Pero antes de instalar deberemos tener nustra cuenta de Linux con privilegios sudo (administrador).
 
 ## Instalacion Apache.
-Para **instalar** Apache en **Ubuntu** primeramente actualizaremos los paquetes locales (para ver los ultimos cambios). Deberemos escribir el siguiente codigo en la **Terminal**: 
-```
-$ sudo apt update
-```
-Después instalaremos el paquete **"Apache2"**:
-```
-$ sudo apt install apache2
-```
-Antes de probar Apache, es necesario modificar los ajustes de firewall para permitir el acceso externo a los puertos web predeterminados.
-_*(Apache se registra con UFW)_
-```
-$ sudo ufw app list
-```
-Y para que el cortafuegos permita el tráfico en el puerto 80:
-```
-$ sudo ufw allow 'Apache'
-```
-
-Y deberemos verificar el cambio:
-```
-$ sudo ufw status
-```
-Si nos indica Dissabled, o inactivo pondremos:
-```
-$ sudo ufw enabed
-```
-Y por ultimo deberemos verificar si se encuentra en ejecucion:
-```
-$ sudo systemctl status apache2
-```
+**1.** Para **instalar** Apache en **Ubuntu** primeramente actualizaremos los paquetes locales (para ver los ultimos cambios). Deberemos escribir el siguiente codigo       en la **Terminal**:  
+    ```
+    $ sudo apt update
+    ```  
+    Después instalaremos el paquete **"Apache2"**:  
+    ```
+    $ sudo apt install apache2
+    ```  
+**2.** Antes de probar Apache, es necesario modificar los **ajustes de firewall** para permitir el acceso externo a los puertos web predeterminados.  
+    _(Apache se registra con UFW)_  
+    ```  
+    $ sudo ufw app list
+    ```  
+    Y para que el cortafuegos permita el tráfico en el puerto 80:  
+    ```  
+    $ sudo ufw allow 'Apache'
+    ```  
+    Y deberemos verificar el cambio:  
+    ```
+    $ sudo ufw status
+    ```  
+    Si nos indica Dissabled, o inactivo pondremos:  
+    ```
+    $ sudo ufw enabed
+    ```  
+**3.** Y por ultimo deberemos verificar si se encuentra en ejecucion:  
+    ```
+    $ sudo systemctl status apache2
+    ```
 
 **Tambien podemos verificar la ejecucion...** Abriendo otra terminal y poniendo 
 ```
@@ -45,7 +44,7 @@ Obtendremos la direccion ip, la cual deberemos poner en el navegador web mediant
 http:// (la direccion ip)
 ```
 
-### Administrar el proceso Apache.
+### 4. Administrar el proceso Apache.
 - Para detener el servidor:
     ```
     $ sudo systemctl stop apache
