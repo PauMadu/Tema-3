@@ -1,3 +1,13 @@
+# Introduccion a Apache.
+
+
+## Indice. 
+
+
+## Palabras clave.
+
+
+
 ## Que es Apache?
 El servidor HTTP Apache es el más usado del mundo.
 Ofrece muchas características, como módulos que se cargan de forma dinámica, una sólida compatibilidad con medios y amplia integración con otras herramientas de software.
@@ -57,3 +67,8 @@ http:// (la direccion ip)
     ```
     $ sudo systemctl reload apache2
     ```
+    
+    
+    
+    ## Bibliografia.
+    https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es
