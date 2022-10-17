@@ -81,10 +81,51 @@ http:// (la direccion ip)
     $ sudo systemctl reload apache2
     ```
     
+# Configuración.
+Una vez instalado, y comprobado en www.localhost que tenemos nuestra pagina operativa. Pasaremos a la configuracion y creacion de nuestro sitio web.
+1. Primeramente crearemos una carpeta en el sitio web,(lo hemos llamado gci):  
+    ```sudo mkdir /var/www/gci/```  
+    Y a continuación crearemos un html para el directorio:  
+    Entramos dentro de la carpeta con: ```cd /var/www/gci/```  
+    Y para crear el html: ```nano index.html```   
+    Entonces ya podremos crear nuestro html a nuesttro gusto, pero siempre siguiendo su estructura, por ejemplo;  
+    ```<html>
+    <head>
+      <title> Titulo de mi increible pagina </title>
+    </head>
+    <body>
+      <p> Y aqui pondremos nuestro html junto a imagenes, links, texto de todass <b>las formas</b> y estilos...</p>
+    </body>
+    </html>
+    ```   
+2. Luego configuraremos el archivo de configuración de VirtualHost.
+    ```cd /etc/apache2/sites-available/```
+    Nos aprovecharemos dde la base que ya viene predefinida en cualqioer archivo;  
+    ```sudo cp 000-default.conf gci.conf```  
+    Entonces yua podremos editar la configuración.  
+    ```sudo nano gci.conf```  
+    2.2 Como **paso opcional** siempre esta bien poner nuestro correo elecronico, para que los usuarios puedan comunicarse 
+        con nosotros si experimentan algun error. ```ServerAdmin ejemplo@gmail.com```  
+    Queremos cambiar la dirección de nuestra pagina sea www (el nombre de nuestra pagina), en vez de HTML.. Entonces deberemos poner;  
+    ```DocumentRoot /var/www/gci/```  
+    Y junto al paso anterior, con el siguiente codigo haremos que al escribir lo siguiente en nuestro buscador nos lleve a nuestra página.
+    ```ServerName gci.example.com``` 
+
+3. Para finalizar 
+
+
+
+## Que se ha conseguido?
+
+## Valoración personal.
+
+
+
+
 ## Motivación.
 La motivación que me ha llevado a realizar este trabajo consiste en obtener conocimientos sobre Apache, para poder conseguir controlar perfectamente este servidor HTML y sacarle todo el partido a sus características y herramientas.
 
 ## Bibliografía.
 [Descripción de Apache](https://es.wikipedia.org/wiki/Servidor_HTTP_Apache)  
-[Seguir la Instalacion](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)
-
+[Seguir la Instalacion](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)  
+[Pagina pasos configuración](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview)  
