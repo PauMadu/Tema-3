@@ -171,7 +171,7 @@ Personalmente estoy contento de mi progreso y aprendizaje ya que una de las cosa
 La motivación que me ha llevado a realizar este trabajo consiste en obtener conocimientos sobre Apache, para poder conseguir controlar perfectamente este servidor HTML y sacarle todo el partido a sus características y herramientas. A esto también le tenemos que añadir el aprendizaje a lanzar un sitio web, y lo más relevante para mi, entender como juntar todos los contenidos aprendidos en este grado, para que todos juntos funcionen y muestren la página creada.
 
 ## Bibliografía.
-[Descripción de Apache](https://es.wikipedia.org/wiki/Servidor_HTTP_Apache)  
-[Seguir la Instalacion](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)  
-[Pagina pasos configuración](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview)  
-[Pagina para solucionar el error del sitio web](https://www.desarrollolibre.net/blog/apache/que-son-y-como-emplear-los-virtualhost-en-apache)
+- [Descripción de Apache.](https://es.wikipedia.org/wiki/Servidor_HTTP_Apache)  
+- [Seguir la Instalacion.](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)  
+- [Pagina pasos configuración.](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview)  
+- [Pagina para solucionar el error del sitio web.](https://www.desarrollolibre.net/blog/apache/que-son-y-como-emplear-los-virtualhost-en-apache)
