@@ -150,7 +150,7 @@ Y finalmente al poner el siguiente código reiniciamos Apache y cargará nuestra
 ```
 service apache2 reload
 ```  
-Pero nos saltará un error, por tanto para solucionarlo pondremos la siguiente linea; 
+Pero nos saltará un error, por tanto para solucionarlo pondremos la siguiente línea; 
 ```
 sudo gedit /etc/hosts
 ```  
